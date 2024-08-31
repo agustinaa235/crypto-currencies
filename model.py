@@ -11,10 +11,11 @@ class Currency(Base):
     name = Column(String, nullable=False)
     symbol = Column(String, nullable=False)
     slug = Column(String, nullable=False, unique=True)
+    circulating_supply = Column(Integer, nullable=False)
     date_added = Column(DateTime, nullable=False)
-    category_id = Column(Integer, ForeignKey('category.id'))
+    last_updated = Column(DateTime, nullable=False)
     pricing = relationship("Pricing", back_populates="currency")
-    category = relationship("Category", back_populates="currencies")
+    categories = relationship("Category", back_populates="currency")
 
 class Pricing(Base):
     __tablename__ = 'pricing'
@@ -22,14 +23,23 @@ class Pricing(Base):
     currency_id = Column(Integer, ForeignKey('currency.id'))
     price = Column(Float, nullable=False)
     volume_24h = Column(Float, nullable=False)
+    percent_change_24h = Column(Float, nullable=False)
     market_cap = Column(Float, nullable=False)
     last_updated = Column(DateTime, nullable=False)
     currency = relationship("Currency", back_populates="pricing")
 
 class Category(Base):
     __tablename__ = 'category'
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(String, primary_key=True)
     name = Column(String, nullable=False)
+    title = Column(String)
     description = Column(String)
-    slug = Column(String, nullable=False, unique=True)
-    currencies = relationship("Currency", back_populates="category")
+    num_tokens = Column(Integer)
+    avg_price_change = Column(Float)
+    market_cap = Column(Float)
+    market_cap_change = Column(Float)
+    volume = Column(Float)
+    volume_change = Column(Float)
+    last_updated = Column(DateTime, nullable=False)
+    currency_id = Column(Integer, ForeignKey('currency.id'))
+    currency = relationship("Currency", back_populates="categories")

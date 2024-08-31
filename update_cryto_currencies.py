@@ -1,62 +1,34 @@
-import requests
-import os
-import requests
-from datetime import datetime
 from database import add_or_update_data
-from dotenv import load_dotenv
+from preprocess import preprocess_currency, preprocess_pricing, preprocess_categories
+from apicalls import get_currency_information
+import logging
 
+logging.basicConfig(filename='automation.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-load_dotenv()
+def has_necessary_categories(currency):
+    return currency.get('name') and currency.get('slug') and currency.get('quote', {}).get('USD')
 
-API_KEY = os.getenv('API_KEY')
-BASE_URL = 'https://pro-api.coinmarketcap.com'
-
-
-def get_currency_information():
-    url = f"{BASE_URL}/v1/cryptocurrency/listings/latest"
-    headers = {
-        'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': API_KEY,
-    }
-    response = requests.get(url, headers=headers)
-    return response.json()
-
-def get_currency_categories():
-    url = f"{BASE_URL}/v1/cryptocurrency/categories"
-    headers = {
-        'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': API_KEY,
-    }
-    response = requests.get(url, headers=headers)
-    return response.json()
-
-def preprocess_data(currency_data, category_map):
+def preprocess_data(currency_data):
     for currency in currency_data['data']:
-        currency_data = {
-            'coinmarketcap_id': currency['id'],
-            'name': currency['name'],
-            'symbol': currency['symbol'],
-            'slug': currency['slug'],
-            'date_added': datetime.fromisoformat(currency['date_added'].replace('Z', '+00:00'))
-        }
-        pricing_data = {
-            'price': currency['quote']['USD']['price'],
-            'volume_24h': currency['quote']['USD']['volume_24h'],
-            'market_cap': currency['quote']['USD']['market_cap'],
-            'last_updated': datetime.fromisoformat(currency['quote']['USD']['last_updated'].replace('Z', '+00:00'))
-        }
-        category_id = currency.get('category_id')
-        category_data = category_map.get(category_id, {'id': None, 'name': 'Unknown', 'slug': 'unknown'})
-        add_or_update_data(currency_data, pricing_data, category_data)
+        if not has_necessary_categories(currency):
+            logging.info(f"Currency data missing: {currency}")
+            continue
+
+        categories_data = preprocess_categories(currency['slug'])
+        currency_info = preprocess_currency(currency, currency['slug']) 
+        pricing_info = preprocess_pricing(currency)
+
+        add_or_update_data(currency_info, pricing_info, categories_data)
+        logging.info(f"Processed currency: {currency['slug']}")
 
 def main():
-
-    currency_data = get_currency_information()
-    categories_data = get_currency_categories()
-
-    category_map = {cat['id']: cat for cat in categories_data['data']}
-    preprocess_data(currency_data, category_map)
-    
+    try:
+        logging.info("Starting data processing")
+        currency_data = get_currency_information()
+        preprocess_data(currency_data)
+        logging.info("Data processing completed")
+    except Exception as e:
+        logging.error(f"Error during processing: {e}")
 
 if __name__ == '__main__':
     main()

@@ -2,10 +2,10 @@ from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import sessionmaker
 from model import Base, Currency, Pricing, Category
 from datetime import datetime
+import logging
 
 
-
-engine = create_engine('sqlite:///cryptos.db', echo=True)
+engine = create_engine('sqlite:///cryptos.db', echo=False)
 inspector = inspect(engine)
 
 

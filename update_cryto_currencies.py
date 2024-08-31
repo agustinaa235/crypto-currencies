@@ -3,8 +3,14 @@ from preprocess import preprocess_currency, preprocess_pricing, preprocess_categ
 from apicalls import get_currency_information
 import logging
 
-logging.basicConfig(filename='automation.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.getLogger('sqlalchemy').setLevel(logging.CRITICAL)
 
+
+logging.basicConfig(
+    filename='automation.log', 
+    level=logging.INFO,  
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 def has_necessary_categories(currency):
     return currency.get('name') and currency.get('slug') and currency.get('quote', {}).get('USD')
 

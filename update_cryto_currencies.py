@@ -31,7 +31,10 @@ def main():
     try:
         logging.info("Starting data processing")
         currency_data = get_currency_information()
-        preprocess_data(currency_data)
+        if currency_data:
+            preprocess_data(currency_data)
+        else:
+            logging.error("No currency data received or error fetching currency information")
         logging.info("Data processing completed")
     except Exception as e:
         logging.error(f"Error during processing: {e}")

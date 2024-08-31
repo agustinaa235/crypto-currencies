@@ -824,3 +824,204 @@
 2024-08-31 15:05:53,947 - INFO - Processed currency: nexo
 2024-08-31 15:05:53,947 - INFO - Data processing completed
 2024-08-31 15:05:53,947 - INFO - Ejecución completada.
+2024-08-31 15:16:41,516 - INFO - Starting data processing
+2024-08-31 15:16:42,915 - INFO - Processed currency: bitcoin
+2024-08-31 15:16:43,923 - INFO - Processed currency: ethereum
+2024-08-31 15:16:44,637 - INFO - Processed currency: tether
+2024-08-31 15:16:45,861 - INFO - Processed currency: bnb
+2024-08-31 15:16:46,572 - INFO - Processed currency: solana
+2024-08-31 15:16:47,607 - INFO - Processed currency: usd-coin
+2024-08-31 15:16:49,755 - INFO - Processed currency: xrp
+2024-08-31 15:16:50,468 - INFO - Processed currency: dogecoin
+2024-08-31 15:16:52,412 - INFO - Processed currency: tron
+2024-08-31 15:16:53,428 - INFO - Processed currency: toncoin
+2024-08-31 15:16:54,770 - INFO - Processed currency: cardano
+2024-08-31 15:16:55,490 - INFO - Processed currency: avalanche
+2024-08-31 15:16:56,099 - INFO - Processed currency: shiba-inu
+2024-08-31 15:16:56,894 - INFO - Processed currency: chainlink
+2024-08-31 15:16:57,940 - INFO - Processed currency: bitcoin-cash
+2024-08-31 15:16:58,630 - INFO - Processed currency: polkadot-new
+2024-08-31 15:16:59,579 - INFO - Processed currency: unus-sed-leo
+2024-08-31 15:17:00,143 - INFO - Processed currency: multi-collateral-dai
+2024-08-31 15:17:00,884 - INFO - Processed currency: litecoin
+2024-08-31 15:17:01,698 - INFO - Processed currency: near-protocol
+2024-08-31 15:17:02,334 - INFO - Processed currency: polygon
+2024-08-31 15:17:03,467 - INFO - Processed currency: kaspa
+2024-08-31 15:17:04,201 - INFO - Processed currency: uniswap
+2024-08-31 15:17:05,021 - INFO - Processed currency: internet-computer
+2024-08-31 15:17:05,572 - INFO - Processed currency: pepe
+2024-08-31 15:17:06,298 - INFO - Processed currency: aptos
+2024-08-31 15:17:12,178 - INFO - Processed currency: monero
+2024-08-31 15:17:14,050 - INFO - Processed currency: artificial-superintelligence-alliance
+2024-08-31 15:17:14,737 - INFO - Processed currency: first-digital-usd
+2024-08-31 15:17:16,064 - INFO - Processed currency: stellar
+2024-08-31 15:17:16,589 - INFO - Processed currency: ethereum-classic
+2024-08-31 15:17:17,647 - INFO - Processed currency: stacks
+2024-08-31 15:17:18,524 - INFO - Processed currency: okb
+2024-08-31 15:17:21,289 - INFO - Processed currency: cronos
+2024-08-31 15:17:22,423 - INFO - Processed currency: immutable-x
+2024-08-31 15:17:23,141 - INFO - Processed currency: filecoin
+2024-08-31 15:17:24,176 - INFO - Processed currency: sui
+2024-08-31 15:17:24,880 - INFO - Processed currency: bittensor
+2024-08-31 15:17:25,698 - INFO - Processed currency: render
+2024-08-31 15:17:26,657 - INFO - Processed currency: mantle
+2024-08-31 15:17:27,861 - INFO - Processed currency: aave
+2024-08-31 15:17:28,387 - INFO - Processed currency: hedera
+2024-08-31 15:17:28,962 - INFO - Processed currency: arbitrum
+2024-08-31 15:17:30,093 - INFO - Processed currency: cosmos
+2024-08-31 15:17:31,231 - INFO - Processed currency: vechain
+2024-08-31 15:17:32,451 - INFO - Processed currency: optimism-ethereum
+2024-08-31 15:17:32,702 - ERROR - Error during processing: HTTP Error 429: {
+    "status": {
+        "timestamp": "2024-08-31T18:17:32.630Z",
+        "error_code": 1008,
+        "error_message": "You've exceeded your API Key's HTTP request rate limit. Rate limits reset every minute.",
+        "elapsed": 0,
+        "credit_count": 0
+    }
+}
+2024-08-31 15:20:22,322 - INFO - Starting data processing
+2024-08-31 15:20:23,586 - INFO - Processed currency: bitcoin
+2024-08-31 15:20:24,292 - INFO - Processed currency: ethereum
+2024-08-31 15:20:25,000 - INFO - Processed currency: bnb
+2024-08-31 15:20:26,131 - INFO - Processed currency: solana
+2024-08-31 15:20:27,151 - INFO - Processed currency: usd-coin
+2024-08-31 15:20:29,195 - INFO - Processed currency: xrp
+2024-08-31 15:20:29,808 - INFO - Processed currency: dogecoin
+2024-08-31 15:20:31,235 - INFO - Processed currency: tron
+2024-08-31 15:20:32,268 - INFO - Processed currency: toncoin
+2024-08-31 15:20:33,909 - INFO - Processed currency: cardano
+2024-08-31 15:20:34,526 - INFO - Processed currency: avalanche
+2024-08-31 15:20:35,541 - INFO - Processed currency: shiba-inu
+2024-08-31 15:20:36,310 - INFO - Processed currency: chainlink
+2024-08-31 15:20:37,695 - INFO - Processed currency: bitcoin-cash
+2024-08-31 15:20:38,772 - INFO - Processed currency: polkadot-new
+2024-08-31 15:20:39,365 - INFO - Processed currency: unus-sed-leo
+2024-08-31 15:20:40,053 - INFO - Processed currency: multi-collateral-dai
+2024-08-31 15:20:40,547 - INFO - Processed currency: litecoin
+2024-08-31 15:20:41,395 - INFO - Processed currency: near-protocol
+2024-08-31 15:20:43,043 - INFO - Processed currency: polygon
+2024-08-31 15:20:43,666 - INFO - Processed currency: kaspa
+2024-08-31 15:20:44,979 - INFO - Processed currency: uniswap
+2024-08-31 15:20:46,406 - INFO - Processed currency: internet-computer
+2024-08-31 15:20:47,214 - INFO - Processed currency: pepe
+2024-08-31 15:20:48,240 - INFO - Processed currency: aptos
+2024-08-31 15:20:48,961 - INFO - Processed currency: monero
+2024-08-31 15:20:50,191 - INFO - Processed currency: artificial-superintelligence-alliance
+2024-08-31 15:20:51,136 - INFO - Processed currency: first-digital-usd
+2024-08-31 15:20:52,232 - INFO - Processed currency: ethereum-classic
+2024-08-31 15:20:52,621 - ERROR - Error during processing: HTTP Error 429: {
+    "status": {
+        "timestamp": "2024-08-31T18:20:52.532Z",
+        "error_code": 1008,
+        "error_message": "You've exceeded your API Key's HTTP request rate limit. Rate limits reset every minute.",
+        "elapsed": 0,
+        "credit_count": 0
+    }
+}
+2024-08-31 15:25:28,301 - INFO - Starting data processing
+2024-08-31 15:25:29,975 - INFO - Processed currency: bitcoin
+2024-08-31 15:25:34,250 - INFO - Processed currency: ethereum
+2024-08-31 15:25:35,274 - INFO - Processed currency: tether
+2024-08-31 15:25:35,993 - INFO - Processed currency: bnb
+2024-08-31 15:25:36,710 - INFO - Processed currency: solana
+2024-08-31 15:25:37,633 - INFO - Processed currency: usd-coin
+2024-08-31 15:25:38,857 - INFO - Processed currency: xrp
+2024-08-31 15:25:39,567 - INFO - Processed currency: dogecoin
+2024-08-31 15:25:40,290 - INFO - Processed currency: tron
+2024-08-31 15:25:40,906 - INFO - Processed currency: toncoin
+2024-08-31 15:25:41,622 - INFO - Processed currency: cardano
+2024-08-31 15:25:42,649 - INFO - Processed currency: avalanche
+2024-08-31 15:25:43,286 - INFO - Processed currency: shiba-inu
+2024-08-31 15:25:45,825 - INFO - Processed currency: chainlink
+2024-08-31 15:25:46,629 - INFO - Processed currency: bitcoin-cash
+2024-08-31 15:25:47,893 - INFO - Processed currency: polkadot-new
+2024-08-31 15:25:48,991 - INFO - Processed currency: unus-sed-leo
+2024-08-31 15:25:51,969 - INFO - Processed currency: multi-collateral-dai
+2024-08-31 15:25:52,667 - INFO - Processed currency: litecoin
+2024-08-31 15:25:53,712 - INFO - Processed currency: near-protocol
+2024-08-31 15:25:54,628 - INFO - Processed currency: polygon
+2024-08-31 15:25:55,641 - INFO - Processed currency: kaspa
+2024-08-31 15:25:56,867 - INFO - Processed currency: uniswap
+2024-08-31 15:25:58,113 - INFO - Processed currency: internet-computer
+2024-08-31 15:25:59,331 - INFO - Processed currency: pepe
+2024-08-31 15:26:01,384 - INFO - Processed currency: aptos
+2024-08-31 15:26:01,898 - INFO - Processed currency: monero
+2024-08-31 15:26:02,617 - INFO - Processed currency: artificial-superintelligence-alliance
+2024-08-31 15:26:03,354 - INFO - Processed currency: first-digital-usd
+2024-08-31 15:26:03,880 - INFO - Processed currency: stellar
+2024-08-31 15:26:05,068 - INFO - Processed currency: ethereum-classic
+2024-08-31 15:26:06,187 - INFO - Processed currency: stacks
+2024-08-31 15:26:06,759 - INFO - Processed currency: okb
+2024-08-31 15:26:07,652 - INFO - Processed currency: cronos
+2024-08-31 15:26:08,172 - INFO - Processed currency: immutable-x
+2024-08-31 15:26:08,876 - INFO - Processed currency: filecoin
+2024-08-31 15:26:09,965 - INFO - Processed currency: sui
+2024-08-31 15:26:12,605 - INFO - Processed currency: bittensor
+2024-08-31 15:26:13,269 - INFO - Processed currency: render
+2024-08-31 15:26:13,771 - INFO - Processed currency: mantle
+2024-08-31 15:26:14,676 - INFO - Processed currency: aave
+2024-08-31 15:26:15,203 - INFO - Processed currency: hedera
+2024-08-31 15:26:15,885 - INFO - Processed currency: arbitrum
+2024-08-31 15:26:16,541 - INFO - Processed currency: cosmos
+2024-08-31 15:26:17,082 - INFO - Processed currency: vechain
+2024-08-31 15:26:17,596 - INFO - Processed currency: optimism-ethereum
+2024-08-31 15:26:18,114 - INFO - Processed currency: injective
+2024-08-31 15:26:18,616 - INFO - Processed currency: maker
+2024-08-31 15:26:19,146 - INFO - Processed currency: dogwifhat
+2024-08-31 15:26:19,691 - INFO - Processed currency: arweave
+2024-08-31 15:26:20,192 - INFO - Processed currency: the-graph
+2024-08-31 15:26:20,702 - INFO - Processed currency: bitget-token-new
+2024-08-31 15:26:21,281 - INFO - Processed currency: thorchain
+2024-08-31 15:26:22,107 - INFO - Processed currency: bonk1
+2024-08-31 15:26:22,624 - INFO - Processed currency: floki-inu
+2024-08-31 15:26:22,874 - ERROR - Rate limit exceeded: {'status': {'timestamp': '2024-08-31T18:26:22.807Z', 'error_code': 1008, 'error_message': "You've exceeded your API Key's HTTP request rate limit. Rate limits reset every minute.", 'elapsed': 0, 'credit_count': 0}}
+2024-08-31 15:26:22,875 - INFO - Retrying in 60 seconds...
+2024-08-31 15:27:24,031 - INFO - Processed currency: theta-network
+2024-08-31 15:27:24,740 - INFO - Processed currency: fantom
+2024-08-31 15:27:25,762 - INFO - Processed currency: helium
+2024-08-31 15:27:26,503 - INFO - Processed currency: algorand
+2024-08-31 15:27:27,399 - INFO - Processed currency: jupiter-ag
+2024-08-31 15:27:28,173 - INFO - Processed currency: kucoin-token
+2024-08-31 15:27:28,719 - INFO - Processed currency: pyth-network
+2024-08-31 15:27:29,202 - INFO - Processed currency: sei
+2024-08-31 15:27:34,089 - INFO - Processed currency: lido-dao
+2024-08-31 15:27:35,077 - INFO - Processed currency: jasmy
+2024-08-31 15:27:35,798 - INFO - Processed currency: celestia
+2024-08-31 15:27:36,411 - INFO - Processed currency: paypal-usd
+2024-08-31 15:27:37,022 - INFO - Processed currency: ondo-finance
+2024-08-31 15:27:37,627 - INFO - Processed currency: core-dao
+2024-08-31 15:27:38,808 - INFO - Processed currency: flow
+2024-08-31 15:27:39,589 - INFO - Processed currency: notcoin
+2024-08-31 15:27:40,110 - INFO - Processed currency: bitcoin-sv
+2024-08-31 15:27:41,153 - INFO - Processed currency: bittorrent-new
+2024-08-31 15:27:41,663 - INFO - Processed currency: based-brett
+2024-08-31 15:27:42,191 - INFO - Processed currency: multiversx-egld
+2024-08-31 15:27:43,387 - INFO - Processed currency: mantra
+2024-08-31 15:27:43,986 - INFO - Processed currency: quant
+2024-08-31 15:27:45,628 - INFO - Processed currency: usdd
+2024-08-31 15:27:46,352 - INFO - Processed currency: onbeam
+2024-08-31 15:27:47,574 - INFO - Processed currency: eos
+2024-08-31 15:27:48,296 - INFO - Processed currency: axie-infinity
+2024-08-31 15:27:49,514 - INFO - Processed currency: neo
+2024-08-31 15:27:51,274 - INFO - Processed currency: gatetoken
+2024-08-31 15:27:51,989 - INFO - Processed currency: flare
+2024-08-31 15:27:53,086 - INFO - Processed currency: dogs
+2024-08-31 15:27:53,692 - ERROR - Rate limit exceeded: {'status': {'timestamp': '2024-08-31T18:27:53.605Z', 'error_code': 1008, 'error_message': "You've exceeded your API Key's HTTP request rate limit. Rate limits reset every minute.", 'elapsed': 0, 'credit_count': 0}}
+2024-08-31 15:27:53,692 - INFO - Retrying in 60 seconds...
+2024-08-31 15:28:54,913 - INFO - Processed currency: tezos
+2024-08-31 15:28:55,671 - INFO - Processed currency: gala
+2024-08-31 15:28:56,490 - INFO - Processed currency: akash-network
+2024-08-31 15:28:57,082 - INFO - Processed currency: tether-gold
+2024-08-31 15:28:57,915 - INFO - Processed currency: ecash
+2024-08-31 15:28:58,772 - INFO - Processed currency: sats
+2024-08-31 15:28:59,343 - INFO - Processed currency: worldcoin-org
+2024-08-31 15:29:00,391 - INFO - Processed currency: the-sandbox
+2024-08-31 15:29:01,572 - INFO - Processed currency: ethereum-name-service
+2024-08-31 15:29:02,138 - INFO - Processed currency: starknet-token
+2024-08-31 15:29:02,678 - INFO - Processed currency: conflux-network
+2024-08-31 15:29:03,651 - INFO - Processed currency: ordi
+2024-08-31 15:29:04,269 - INFO - Processed currency: ronin
+2024-08-31 15:29:05,748 - INFO - Processed currency: dydx-chain
+2024-08-31 15:29:06,620 - INFO - Processed currency: nexo
+2024-08-31 15:29:06,620 - INFO - Data processing completed
